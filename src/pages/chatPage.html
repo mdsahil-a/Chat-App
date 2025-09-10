@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Dashboard</title>
+<link rel="stylesheet" href="../css/chatPage.css">
+</head>
+<body>
+  <div>
+
+
+  </div>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- My Profile -->
+     <div class="searchSection"> 
+    <input type="search"  placeholder="Search..." id="search">
+
+    <div class="results">
+
+</div>
+</div>
+
+      <div class="my-profile">
+        <img src="../../public/avatar.jpeg" alt="My Profile">
+        <div class="info">
+          <div class="name">Md Sahil</div>
+          <div class="status">Online</div>
+        </div>
+      </div>
+
+      <!-- Users -->
+      <div class="user-list" id="userList">
+    
+
+      
+      </div>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-container">
+      <div class="chat-header" id="chatHeader">Chat with Alice</div>
+      <div class="chat-box" id="chatBox">
+
+      </div>
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script src="../js/chatPage.js">
+
+  </script>
+</body>
+</html>
